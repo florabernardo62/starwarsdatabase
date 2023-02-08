@@ -36,3 +36,9 @@ header {
 	-moz-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
 	box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
 }
+footer {
+	border-top: 2px solid gray;
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+}
