@@ -1,0 +1,156 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+header {
+	margin: 15px;
+}
+footer {
+	border-top: 2px solid gray;
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	color: gray;
+}
+a:hover {
+	color: white;
+}
+.cpf {
+	color: white;
+}
+.charimg {
+	width: 100%;
+	height: 100%;
+}
+
+.hnav {
+	width: auto;
+	height: 75px;
+	background-image: url(/assets/images/NavBackground.webp);
+	background-size: cover;
+}
+.characters {
+	border-top: solid 5px black;
+	padding: 20px;
+	padding-top: 25px;
+}
+.maintitle {
+	color: white;
+	text-transform: uppercase;
+	font-size: xx-large;
+}
+.navitem {
+	color: white;
+	text-decoration: none;
+}
+.navitem:hover {
+	font-size: xx-large;
+	color: rgb(110, 106, 106);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 25%;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
+	box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
+}
+
+.contactHeader {
+	text-align: center;
+	font-size: 60px;
+	color: rgb(238, 238, 100);
+}
+
+.homeLink {
+	text-decoration: none;
+	border: 1px solid rgb(221, 232, 68);
+	border-radius: 10px;
+	padding: 5px;
+	width: 90px;
+	text-align: center;
+	align-self: center;
+	color: rgb(239, 239, 124);
+	font-size: 15px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.names {
+	text-align: center;
+	padding: 80px;
+}
+
+.name {
+	text-decoration: none;
+	margin: 15px;
+	font-size: 30px;
+	color: rgb(238, 238, 100);
+}
+
+.contactBody {
+	background-image: url("/assets/images/stars.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.name:hover {
+	color: rgb(231, 231, 182);
+}
+
+
+.aboutBody{
+	background-image: url("/assets/images/stars.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+.aboutHeader {
+	text-align: center;
+	font-size: 60px;
+	color: rgb(238, 238, 100);
+}
+
+.homeLink-about {
+	text-decoration: none;
+	border: 1px solid rgb(221, 232, 68);
+	border-radius: 10px;
+	padding: 5px;
+	width: 90px;
+	text-align: center;
+	align-self: center;
+	color: rgb(239, 239, 124);
+	font-size: 15px;
+	
+}
+
+.aboutTxt {
+	color: rgb(238, 238, 100);
+	align-self: center;
+	width: 850px;
+	text-align: center;
+	padding: 100px;
+	line-height: 40px;
+	font-size: 25px;
+}
+
+.homeLink-about:hover {
+	border: 1px solid rgb(229, 234, 152);
+	color: rgb(243, 243, 176);
+	font-size: 18px;
+	width: 100px;
+}
+
+.homeLink:hover {
+	border: 1px solid rgb(229, 234, 152);
+	color: rgb(243, 243, 176);
+	font-size: 18px;
+	width: 100px;
+}
