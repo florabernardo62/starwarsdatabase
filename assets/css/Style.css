@@ -36,6 +36,12 @@ header {
 	-moz-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
 	box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
 }
+footer {
+	border-top: 2px solid gray;
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+}
 
 .contactHeader {
 	text-align: center;
@@ -52,7 +58,6 @@ header {
 	text-align: center;
 	align-self: center;
 	color: rgb(238, 238, 100);
-	
 }
 
 .nav {
@@ -63,8 +68,6 @@ header {
 .names {
 	text-align: center;
 	padding: 80px;
-	
-
 }
 
 .name {
@@ -74,7 +77,7 @@ header {
 	color: rgb(238, 238, 100);
 }
 
-.contactBody{
+.contactBody {
 	background-image: url("/assets/images/stars.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -84,5 +87,3 @@ header {
 .name:hover {
 	color: rgb(231, 231, 182);
 }
-
-
