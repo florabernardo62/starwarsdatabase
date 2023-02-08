@@ -1,10 +1,40 @@
-.solo {
+.charimg {
 	width: 100%;
 	height: 100%;
 }
-.c3po {
-	width: 100%;
-	height: 100%;
+
+.hnav {
+	width: auto;
+	height: 75px;
+	background-image: url(/assets/images/NavBackground.webp);
+	background-size: cover;
+}
+.characters {
+	border-top: solid 5px black;
+	padding: 20px;
+	padding-top: 25px;
+}
+header {
+	margin: 15px;
+}
+.maintitle {
+	color: white;
+	text-transform: uppercase;
+	font-size: xx-large;
+}
+.navitem {
+	color: white;
+	text-decoration: none;
+}
+.navitem:hover {
+	font-size: xx-large;
+	color: rgb(110, 106, 106);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 25%;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
+	box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.67);
 }
 
 .contactHeader {
