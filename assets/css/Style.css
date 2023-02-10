@@ -32,13 +32,14 @@ a:hover {
 	background-size: cover;
 }
 .charcards {
-	border-top: solid 5px black;
+	border-top: solid 3px black;
 	padding: 20px;
-	padding-top: 25px;
+	margin-top: 20px;
 }
 .characters {
 	justify-content: center;
 	align-items: center;
+	margin-top: 15px;
 }
 .maintitle {
 	color: white;
