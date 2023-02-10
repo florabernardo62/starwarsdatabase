@@ -167,6 +167,27 @@ a:hover {
 	font-size: 18px;
 	width: 100px;
 }
+ /* modal */
+.modal {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-image: url("/assets/images/starwarsbackground.JPG");
+}
+.modal-content {
+	width: 1650px;
+	height: 1000px;
+}
+.center-text {
+	text-align: center;
+	font-size: 80px;
+	font-weight: bolder;
+	color: yellow;
+}
 
 .charInfo {
 	display: none;
@@ -185,4 +206,56 @@ a:hover {
 	font-weight: bold;
 	line-height: 50px;
 	letter-spacing: 4px;
+}
+
+/* light mode */
+.lightBtn {
+	background-image: url("/assets/images/lightBtnbg.JPG");
+	color: aliceblue;
+	font-size: larger;
+	font-weight: bolder;
+	border: 2em;
+	border-radius: 2em;
+	width: 200px;
+	height: 200px;
+	float: right;
+	margin: 20px;
+	width: 750px;
+	height: 750px;
+}
+.lightBtn:hover {
+	box-shadow: rgb(2, 18, 255) 1px 0 10px 10px;
+	text-shadow: rgb(2, 18, 255) 1px 0 10px;
+}
+.lightMode {
+	background-image: url("/assets/images/lightmodebackground.JPG");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
+}
+/* dark mode */
+.darkBtn {
+	background-image: url("/assets/images/darthBtnbg.JPG");
+	color: aliceblue;
+	font-size: larger;
+	font-weight: bolder;
+	border: 2em;
+	border-radius: 2em;
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 20px;
+	width: 750px;
+	height: 750px;
+}
+.darkBtn:hover {
+	box-shadow: rgb(255, 0, 0) 1px 0 10px 10px;
+	text-shadow: rgb(255, 0, 0) 1px 0 10px;
+}
+.darkMode {
+	background-image: url("/assets/images/darkmodebackground.JPG");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: none;
+	color: aliceblue;
 }

@@ -16,7 +16,7 @@
 					<a href="#" class="link is-info navitem">Home</a>
 				</p>
 				<p class="level-item has-text-centered">
-					<a href="#" class="link is-info navitem">something here</a>
+					  <a class="js-modal-trigger navitem" data-target="modal-js-example">Faction</a>
 				</p>
 				<p class="level-item has-text-centered">
 					<a href="index.html" class="maintitle">Starwars Cosplay Database</a>
@@ -145,6 +145,35 @@
 			</div>
 		</section>
 
+		<section id="c3po">
+			<div class="box">
+				<h1><center>C-3PO</center></h1>
+				<!-- https://swapi.dev/api/people/2 -->
+			</div>
+			<div class="columns is-gapless is-multiline is-mobile">
+				<div class="column is-one-quarter">
+					<img src="assets\images\c3po-square.png" alt="Image of c3po" />
+				</div>
+				<div class="column">
+					<blockquote>"Sometimes, I just don't understand human behavior."</blockquote>
+				</div>
+			</div>
+		</section>
+<!-- modal section-->
+		<div id="modal-js-example" class="modal">
+			<div class="modal-background"></div>
+  
+			<div class="modal-content">
+	  		<div class="modal-content">
+				<p class="center-text">What side are you on?</p>
+				<button onclick="lightMode()" class="lightBtn">Light Side</button>
+				<button onclick="darkMode()" class="darkBtn">Dark Side</button>
+	  		</div>
+			</div>
+	
+			<button class="modal-close is-large" aria-label="close"></button>
+  		</div>
+	</body>
 		<footer>
 			<div>
 				<p>
@@ -158,9 +187,7 @@
 				</p>
 				<p>The source code is licensed MIT.</p>
 				<p>2023</p>
-			</div>
-		</footer>
-
-		<script src="assets/js/script.js"></script>
+		</div></footer>
+		<script src="./assets/js/script.js"></script>
 	</body>
 </html>
