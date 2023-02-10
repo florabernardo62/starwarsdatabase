@@ -16,7 +16,7 @@
 					<a href="#" class="link is-info navitem">Home</a>
 				</p>
 				<p class="level-item has-text-centered">
-					<a href="#" class="link is-info navitem">something here</a>
+					  <a class="js-modal-trigger navitem" data-target="modal-js-example">Faction</a>
 				</p>
 				<p class="level-item has-text-centered">
 					<a href="index.html" class="maintitle">Starwars Cosplay Database</a>
@@ -29,6 +29,7 @@
 				</p>
 			</nav>
 		</header>
+	<body>
 		<section class="characters">
 			<div class="tile is-ancestor">
 				<div class="tile is-parent">
@@ -65,10 +66,26 @@
 					</article>
 				  </div>
 		</section>
+<!-- modal section-->
+		<div id="modal-js-example" class="modal">
+			<div class="modal-background"></div>
+  
+			<div class="modal-content">
+	  		<div class="modal-content">
+				<p class="center-text">What side are you on?</p>
+				<button onclick="lightMode()" class="lightBtn">Light Side</button>
+				<button onclick="darkMode()" class="darkBtn">Dark Side</button>
+	  		</div>
+			</div>
+	
+			<button class="modal-close is-large" aria-label="close"></button>
+  		</div>
+	</body>
 		<footer><div>
 			<p>Website Created by <a class="ghlink" href="https://github.com/Knilssonsnow"><strong>Knilssonsnow</strong></a>, <a class="ghlink"  href="https://github.com/florabernardo62"><strong>florabernardo62</strong></a>, <a class="ghlink" href="https://github.com/mbztek"><strong>mbztek</strong></a>, <a class="ghlink" href="https://github.com/daniferru"><strong>daniferru</strong></a>, and <a class="ghlink" href="https://github.com/aubreyj11"><strong>aubreyj11</strong></a>.</p>
 				<p>The source code is licensed MIT.</p>
 				<p>2023</p>
 		</div></footer>
+		<script src="./assets/js/script.js"></script>
 	</body>
 </html>
