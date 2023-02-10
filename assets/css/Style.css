@@ -25,6 +25,10 @@ a:hover {
 	height: 100%;
 }
 
+.charimg:hover {
+	cursor: pointer;
+}
+
 .hnav {
 	width: auto;
 	height: 75px;
@@ -46,6 +50,13 @@ a:hover {
 	text-transform: uppercase;
 	font-size: xx-large;
 }
+
+.maintitle:hover {
+	color: white;
+	-webkit-text-stroke: 2px rgb(226, 226, 87);
+	
+} 
+
 .navitem {
 	color: white;
 	text-decoration: none;
@@ -156,4 +167,23 @@ a:hover {
 	color: rgb(243, 243, 176);
 	font-size: 18px;
 	width: 100px;
+}
+
+.charInfo {
+	display: none;
+	border: 3px solid rgb(5, 5, 13);
+	margin: 15px;
+	padding: 10px;
+	background: linear-gradient(to right, rgb(47, 47, 65), rgb(8, 8, 32));
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-transform: capitalize;
+}
+
+.info {
+	padding: 5px;
+	color: rgb(111, 143, 198);
+	font-size: 25px;
+	font-weight:bold;
+	line-height: 50px;
+	letter-spacing: 4px;
 }
