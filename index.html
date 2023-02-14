@@ -10,6 +10,7 @@
 		<title>Starwars Cosplay Database</title>
 	</head>
 	<body>
+		<div class="theme lightMode">
 		<header class="himg">
 			<nav class="level hnav">
 				<p class="level-item has-text-centered">
@@ -30,7 +31,7 @@
 			</nav>
 		</header>
 
-		<section class="charInfo">
+		<section class="charInfo charStyleLight" id="charBox">
 			<p class="info charName"></p>
 			<p class="info charGender"></p>
 			<p class="info charHeight"></p>
@@ -151,8 +152,8 @@
 			<div class="modal-content">
 	  		<div class="modal-content">
 				<p class="center-text">What side are you on?</p>
-				<button onclick="lightMode()" class="lightBtn">Light Side</button>
-				<button onclick="darkMode()" class="darkBtn">Dark Side</button>
+				<button class="lightBtn" id="themeLight">Light Side</button>
+				<button class="darkBtn" id="themeDark">Dark Side</button>
 	  		</div>
 			</div>
 	
@@ -174,5 +175,4 @@
 				<p>2023</p>
 		</div></footer>
 		<script src="./assets/js/script.js"></script>
-	</body>
 </html>

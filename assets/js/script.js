@@ -1,3 +1,12 @@
+//  theme variables
+var themeLight = document.querySelector("#themeLight");
+var themeDark = document.querySelector("#themeDark");
+var theme = document.querySelector(".theme");
+var charBox = document.querySelector('#charBox')
+// set default to light mode
+var mode = "lightMode";
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {
@@ -41,19 +50,35 @@ document.addEventListener('DOMContentLoaded', () => {
         closeAllModals();
       }
     });
+    // theme function
+    themeLight.addEventListener("click", function() {
+      if (mode === "lightMode") {
+        closeAllModals();
+      } else { 
+        mode = "lightMode";
+        theme.setAttribute("class", "lightMode");
+        charBox.removeAttribute("class", "charStyleDark");
+        charBox.setAttribute("class", "charStyleLight");
+        closeAllModals();
+        
+      }
+      });
+    themeDark.addEventListener("click", function() {
+      if (mode === "lightMode") {
+        mode = "darkMode"; 
+        theme.setAttribute("class", "darkMode");
+        charBox.removeAttribute("class", "charStyleLight");
+        charBox.setAttribute("class", "charStyleDark");
+        
+        closeAllModals();
+      } else {
+        closeAllModals();
+      }
+      });
+      
   });
-// theme function
-  function lightMode() {
-    var element = document.body;
-    element.classList.toggle('lightMode');
-    localStorage.setItem('lightMode', 'lightBtn');
-  };
-  function darkMode() {
-    var element = document.body;
-    element.classList.toggle('darkMode');
-    localStorage.setItem('darkMode', 'darkBtn');
-  };
-  var charInfo = document.querySelector('.charInfo');
+
+var charInfo = document.querySelector('.charInfo');
 var charName = document.querySelector('.charName');
 var charGender = document.querySelector('.charGender');
 var charHeight = document.querySelector('.charHeight');
@@ -80,6 +105,7 @@ function imgClickHandler(cosPerson) {
         charHair.textContent = "Hair Color:   " + data.hair_color;
     })
     charInfo.style.display = 'block'
+
 }
 
         
