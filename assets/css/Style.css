@@ -32,7 +32,7 @@ a:hover {
 .hnav {
 	width: auto;
 	height: 75px;
-	background-image: url(/assets/images/NavBackground.webp);
+	background-image: url(../images/NavBackground.png);
 	background-size: cover;
 }
 .charcards {
@@ -107,7 +107,7 @@ a:hover {
 }
 
 .contactBody {
-	background-image: url("/assets/images/stars.jpg");
+	background-image: url("../images/stars.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .aboutBody {
-	background-image: url("/assets/images/stars.jpg");
+	background-image: url("../images/stars.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -167,7 +167,7 @@ a:hover {
 	font-size: 18px;
 	width: 100px;
 }
- /* modal */
+/* modal */
 .modal {
 	display: none;
 	position: fixed;
@@ -176,7 +176,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-image: url("/assets/images/starwarsbackground.JPG");
+	background-image: url("../images/starwarsbackground.JPG");
 }
 .modal-content {
 	width: 1650px;
@@ -208,12 +208,12 @@ a:hover {
 	letter-spacing: 4px;
 }
 .charStyleDark {
-	background-image: url("/assets/images/chardarkstyle.JPG");
+	background-image: url("../images/chardarkstyle.JPG");
 	color: aliceblue;
 	text-align: center;
 }
 .charStyleLight {
-	background-image: url("/assets/images/charlightstyle.JPG");
+	background-image: url("../images/charlightstyle.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
@@ -222,7 +222,7 @@ a:hover {
 }
 /* light mode */
 .lightBtn {
-	background-image: url("/assets/images/lightBtnbg.JPG");
+	background-image: url("../images/lightBtnbg.png");
 	color: aliceblue;
 	font-size: larger;
 	font-weight: bolder;
@@ -240,14 +240,14 @@ a:hover {
 	text-shadow: rgb(2, 18, 255) 1px 0 10px;
 }
 .lightMode {
-	background-image: url("/assets/images/lightmodebackground.JPG");
+	background-image: url("../images/lightmodebackground.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
 }
 /* dark mode */
 .darkBtn {
-	background-image: url("/assets/images/darthBtnbg.JPG");
+	background-image: url("../images/darthBtnbg.png");
 	color: aliceblue;
 	font-size: larger;
 	font-weight: bolder;
@@ -265,7 +265,7 @@ a:hover {
 	text-shadow: rgb(255, 0, 0) 1px 0 10px;
 }
 .darkMode {
-	background-image: url("/assets/images/darkmodebackground.JPG");
+	background-image: url("../images/darkmodebackground.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin: none;
@@ -274,8 +274,4 @@ a:hover {
 .darkSide:hover {
 	box-shadow: rgb(255, 0, 0) 1px 0 10px 10px;
 	text-shadow: rgb(255, 0, 0) 1px 0 10px;
-}
-
-.thumbnails {
-	padding: 50px;
 }
