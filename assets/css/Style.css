@@ -107,7 +107,7 @@ a:hover {
 }
 
 .contactBody {
-	background-image: url("../images/stars.png");
+	background-image: url("../images/stars.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -118,7 +118,7 @@ a:hover {
 }
 
 .aboutBody {
-	background-image: url("../images/stars.png");
+	background-image: url("../images/stars.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -176,7 +176,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-image: url("../images/starwarsbackground.png");
+	background-image: url("../images/starwarsbackground.JPG");
 }
 .modal-content {
 	width: 1650px;
@@ -208,12 +208,12 @@ a:hover {
 	letter-spacing: 4px;
 }
 .charStyleDark {
-	background-image: url("../images/chardarkstyle.png");
+	background-image: url("../images/chardarkstyle.JPG");
 	color: aliceblue;
 	text-align: center;
 }
 .charStyleLight {
-	background-image: url("../images/charlightstyle.png");
+	background-image: url("../images/charlightstyle.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
