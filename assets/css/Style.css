@@ -32,7 +32,7 @@ a:hover {
 .hnav {
 	width: auto;
 	height: 75px;
-	background-image: url(../images/NavBackground.webp);
+	background-image: url(/assets/images/NavBackground.png);
 	background-size: cover;
 }
 .charcards {
