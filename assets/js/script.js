@@ -12,40 +12,40 @@ document.addEventListener('DOMContentLoaded', () => {
     function openModal($el) {
       $el.classList.add('is-active');
     }
-  
+
     function closeModal($el) {
       $el.classList.remove('is-active');
     }
-  
+
     function closeAllModals() {
       (document.querySelectorAll('.modal') || []).forEach(($modal) => {
         closeModal($modal);
       });
     }
-  
+
     // Add a click event on buttons to open a specific modal
     (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
       const modal = $trigger.dataset.target;
       const $target = document.getElementById(modal);
-  
+
       $trigger.addEventListener('click', () => {
         openModal($target);
       });
     });
-  
+
     // Add a click event on various child elements to close the parent modal
     (document.querySelectorAll('.modal-background, .modal-overlay, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
       const $target = $close.closest('.modal');
-  
+
       $close.addEventListener('click', () => {
         closeModal($target);
       });
     });
-  
+
     // Add a keyboard event to close all modals
     document.addEventListener('keydown', (event) => {
       const e = event || window.event;
-  
+
       if (e.keyCode === 27) { // Escape key
         closeAllModals();
       }
@@ -54,28 +54,28 @@ document.addEventListener('DOMContentLoaded', () => {
     themeLight.addEventListener("click", function() {
       if (mode === "lightMode") {
         closeAllModals();
-      } else { 
+      } else {
         mode = "lightMode";
         theme.setAttribute("class", "lightMode");
         charBox.removeAttribute("class", "charStyleDark");
         charBox.setAttribute("class", "charStyleLight");
         closeAllModals();
-        
+
       }
       });
     themeDark.addEventListener("click", function() {
       if (mode === "lightMode") {
-        mode = "darkMode"; 
+        mode = "darkMode";
         theme.setAttribute("class", "darkMode");
         charBox.removeAttribute("class", "charStyleLight");
         charBox.setAttribute("class", "charStyleDark");
-        
+
         closeAllModals();
       } else {
         closeAllModals();
       }
       });
-      
+
   });
 
 var charInfo = document.querySelector('.charInfo');
@@ -90,7 +90,7 @@ function imgClickHandler(cosPerson) {
     url = url + cosPerson;
     console.log(url)
 
-    
+
 
     fetch(url)
     .then (function (response){
@@ -111,7 +111,7 @@ function imgClickHandler(cosPerson) {
 var videoResults = document.querySelector('.youtubeResults');
 
 function youtubeResults(cosName) {
-  var youtubeURL = "https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyB-mNwZfjJuYhs9x6mfbONsGVi0PbUQ-5Q&type=video&part=snippet&q=";
+  var youtubeURL = "https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyBtzKmAdZ_BoZYAg15uAtYcYtO86BWbIwU&type=video&part=snippet&q=";
   youtubeURL = youtubeURL + cosName;
   console.log(youtubeURL);
 
@@ -121,10 +121,32 @@ function youtubeResults(cosName) {
   })
   .then (function (data) {
     console.log(data);
+    videoResults.innerHTML= "";
+
+    for (i=0; i<data.items.length; i++) {
+      
+      var newImgA = document.createElement("a");
+      var newImg = document.createElement("img");
+      var youtubeURL = 'https://www.youtube.com/watch?v='
+
+      newImgA.setAttribute('href', youtubeURL + data.items[i].id.videoId)
+      newImg.setAttribute('src', data.items[i].snippet.thumbnails.default.url);
+      videoResults.append(newImgA);
+      newImgA.appendChild(newImg);
+
+      newImg.classList.add('thumbnails');
+
+
+      // newImgA.append(newImg);
+    
+      
+      
+
+    }
   })
 }
 
-        
+
 
 
 
