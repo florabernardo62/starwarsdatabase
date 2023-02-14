@@ -32,7 +32,7 @@ a:hover {
 .hnav {
 	width: auto;
 	height: 75px;
-	background-image: url(/assets/images/NavBackground.webp);
+	background-image: url(../images/NavBackground.webp);
 	background-size: cover;
 }
 .charcards {
@@ -167,7 +167,7 @@ a:hover {
 	font-size: 18px;
 	width: 100px;
 }
- /* modal */
+/* modal */
 .modal {
 	display: none;
 	position: fixed;
@@ -240,7 +240,7 @@ a:hover {
 	text-shadow: rgb(2, 18, 255) 1px 0 10px;
 }
 .lightMode {
-	background-image: url("/assets/images/lightmodebackground.JPG");
+	background-image: url("../images/lightmodebackground.JPG");
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: black;
