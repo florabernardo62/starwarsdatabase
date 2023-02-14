@@ -108,6 +108,22 @@ function imgClickHandler(cosPerson) {
 
 }
 
+var videoResults = document.querySelector('.youtubeResults');
+
+function youtubeResults(cosName) {
+  var youtubeURL = "https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyB-mNwZfjJuYhs9x6mfbONsGVi0PbUQ-5Q&type=video&part=snippet&q=";
+  youtubeURL = youtubeURL + cosName;
+  console.log(youtubeURL);
+
+  fetch(youtubeURL)
+  .then (function (response) {
+    return response.json();
+  })
+  .then (function (data) {
+    console.log(data);
+  })
+}
+
         
 
 
