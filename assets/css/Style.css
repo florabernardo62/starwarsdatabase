@@ -275,3 +275,7 @@ a:hover {
 	box-shadow: rgb(255, 0, 0) 1px 0 10px 10px;
 	text-shadow: rgb(255, 0, 0) 1px 0 10px;
 }
+
+.thumbnails {
+	padding: 50px;
+}
