@@ -2,10 +2,9 @@
 var themeLight = document.querySelector("#themeLight");
 var themeDark = document.querySelector("#themeDark");
 var theme = document.querySelector(".theme");
-var charBox = document.querySelector('#charBox')
+var charBox = document.querySelector('#charBox');
 // set default to light mode
 var mode = "lightMode";
-
 
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
@@ -59,8 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         theme.setAttribute("class", "lightMode");
         charBox.removeAttribute("class", "charStyleDark");
         charBox.setAttribute("class", "charStyleLight");
+        localStorage.setItem("savedTheme", mode);
         closeAllModals();
-
       }
       });
     themeDark.addEventListener("click", function() {
@@ -69,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         theme.setAttribute("class", "darkMode");
         charBox.removeAttribute("class", "charStyleLight");
         charBox.setAttribute("class", "charStyleDark");
-
+        localStorage.setItem("savedTheme", mode);
         closeAllModals();
       } else {
         closeAllModals();
