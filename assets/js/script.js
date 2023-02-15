@@ -110,7 +110,7 @@ function imgClickHandler(cosPerson) {
 var videoResults = document.querySelector('.youtubeResults');
 
 function youtubeResults(cosName) {
-  var youtubeURL = "https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyBM6aAEk3xfoLSP_eQq1EkOsTuVOxalyAw&type=video&part=snippet&q=";
+  var youtubeURL = "https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAFudWVhj5Ic-PGoekGSPTKNyn9PNV4beY&type=video&part=snippet&q=";
   youtubeURL = youtubeURL + cosName;
   console.log(youtubeURL);
 
